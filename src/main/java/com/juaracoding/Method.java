@@ -1,55 +1,60 @@
 package com.juaracoding;
 
-
 public class Method {
+
     public static void main(String[] args) {
 
-        datailProduct("Nvidia",1,4);
-        datailProduct("Amd Radeon",2,3);
-        drawKotak(10);
-        System.out.println();
+        detailProduct("Nvidia RTX 5070",15000,101,minBuy());
+        detailProduct("AMD Radeon",11000,5,minBuy());
+
+        /*rawKotak(10);
         drawKotak(5);
 
+        double luas = luasKotak(10);
+        System.out.println(luas);
+        System.out.println(luasKotak(5));*/
 
-        double luas=luasKotak(8);
-       System.out.println(luasKotak(7));
-        System.out.println(luasKotak(7));
-        System.out.println("");
+
+
     }
 
-    // custom method//
-    public static double subTotal(int amount,double price){
-      if (amount<1){
-          System.out.println("Minimal Pembelian Harus Satu");
-      }
-        return amount*price;
-    }
-
-    public  static int minSale(){
-        return 1;
-    }
-    public  static  double luasKotak(int sisi){
-        return  sisi*sisi;
- }
-    public static void datailProduct( String productName,int stock,double price){
-        System.out.println("Nama Product:" +productName.toUpperCase());
-        System.out.println("jumlah Stock"+stock);
-        System.out.println("Harga"+price);
-        if (stock>100){
-
-            System.out.println("stock masih ada"+stock);
+    // custom method
+    public static void detailProduct(String productName, double price, int stock, int minBuy){
+        System.out.println("Nama Product: "+productName.toUpperCase());
+        System.out.println("Harga: "+price);
+        System.out.println("Jumlah Stok: "+stock);
+        System.out.println("Min Pembelian: "+minBuy);
+        // > 100 Stok tidak boleh lebih dari 100
+        if(stock > 100) { // 101 > 100
+            System.out.println("Stok tidak boleh lebih dari 100");
         }
-        System.out.println("sub total"+subTotal(2 ,price));
+        // return subTotal
+        System.out.println("Subtotal = "+subTotal(1,price));
+        System.out.println();
     }
 
- public static  void  drawKotak(int sisi){
-     for (int i = 0; i < sisi; i++) {
-             for (int j = 0; j < sisi; j++) {
-                 System.out.print("*");
-             }
-             System.out.println();
-     }
-     }
- }
+    public static double subTotal(int amount, double price){
+        if(amount < minBuy()){ // 1 < 1 false
+            System.out.println("Minimal pembelian harus "+minBuy());
+        }
+        return amount * price;
+    }
 
+    public static int minBuy(){ // int minBuy = 1
+        return 2;
+    }
 
+    public static void drawKotak(int sisi){
+        for (int i = 0; i < sisi; i++) {
+            for (int j = 0; j < sisi; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    public static double luasKotak(int sisi){
+        return sisi*sisi;
+    }
+
+}

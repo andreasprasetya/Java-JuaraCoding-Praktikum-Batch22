@@ -37,31 +37,31 @@ public class Percabanagan {
 //            String inEmail="adminjuaracoding.com";
 //            String inPassword1="indonesia";
 
-            int menu=1;
-            switch (menu){
-
-                case 1:
-                    System.out.println("tampilkan data");
-                    break;
-
-                case 2:
-                    System.out.println("tambag data");
-                    break;
-
-                case 3:
-                    System.out.println("edit data");
-                    break;
-
-                default:
-                    System.out.println("invalid input");
-
-
-            }
-
-
-            int grade=80;
-            String keterangan = grade>=75?"Lulus":"Belum Lulus";
-            System.out.println(keterangan);
+//            int menu=1;
+//            switch (menu){
+//
+//                case 1:
+//                    System.out.println("tampilkan data");
+//                    break;
+//
+//                case 2:
+//                    System.out.println("tambag data");
+//                    break;
+//
+//                case 3:
+//                    System.out.println("edit data");
+//                    break;
+//
+//                default:
+//                    System.out.println("invalid input");
+//
+//
+//            }
+//
+//
+//            int grade=80;
+//            String keterangan = grade>=75?"Lulus":"Belum Lulus";
+//            System.out.println(keterangan);
 
             String phoneNumber="08123456";
             String email="adminjuaracoding.com";

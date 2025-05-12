@@ -9,13 +9,23 @@ public class DaftarFilm {
             tampilkanFilm("gfhgfh", "1fdgfdgdf", "1", 5);
     }
     public  static  void tampilkanFilm(String judul, String genre, String durasi, int rating) {
-        Scanner input = new Scanner(System.in);
-        ArrayList<Integer> numbers = new ArrayList<>();
 
-        System.out.println("Judul Film:");
-        System.out.println("Genre:");
-        System.out.println("Durasi:");
-        System.out.println("Rated:");
+        int[] arrayInt = new int[10];
+        ArrayList<Integer> data = new ArrayList<>();
+        Scanner input = new Scanner(System.in);
+        for (int i = 0; i < arrayInt.length; i++) {
+            System.out.println("Judul Film:");
+            judul = judul.toString();
+            System.out.println("Genre:");
+            judul = judul.toString();
+            System.out.println("Durasi:");
+            judul = judul.toString();
+            System.out.println("Rated:");
+            int rated = rating;
+            arrayInt[i] = Integer.parseInt(input.toString());
+        }
+
+
     }
     }
 

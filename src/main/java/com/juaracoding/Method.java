@@ -4,15 +4,6 @@ public class Method {
 
     public static void main(String[] args) {
 
-        detailProduct("Nvidia RTX 5070",15000,101,minBuy());
-        detailProduct("AMD Radeon",11000,5,minBuy());
-
-        /*rawKotak(10);
-        drawKotak(5);
-
-        double luas = luasKotak(10);
-        System.out.println(luas);
-        System.out.println(luasKotak(5));*/
 
 
 

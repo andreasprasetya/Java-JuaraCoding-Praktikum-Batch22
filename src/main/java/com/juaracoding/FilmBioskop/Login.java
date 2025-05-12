@@ -1,4 +1,4 @@
-package com.FilmBioskop;
+package com.juaracoding.FilmBioskop;
 
 import java.util.Scanner;
 
@@ -10,7 +10,7 @@ public class Login extends MainFilm {
 
 
 
-        login("Admin",1234);
+
 
     }
 
@@ -18,7 +18,7 @@ public class Login extends MainFilm {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("User Name: ");
-        String name= scanner.nextLine();
+        String name= scanner.toString();
 
 
         System.out.print("Password: ");
@@ -29,7 +29,7 @@ public class Login extends MainFilm {
         boolean isRegistered = false;
         boolean isOTPReceived = false;
         boolean isOTPExpired = false;
-        String inEmailOrPhoneNumber = scanner.next();
+        String inEmailOrPhoneNumber = scanner.nextInt();
 
         if (userName1.equals(inEmailOrPhoneNumber) && password1.equals(inEmailOrPhoneNumber)) {
             isRegistered = true;

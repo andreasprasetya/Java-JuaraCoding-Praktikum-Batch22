@@ -1,4 +1,4 @@
-package com.FilmBioskop;
+package com.juaracoding.FilmBioskop;
 
 
 import java.util.Scanner;
@@ -33,13 +33,13 @@ public class MainFilm {
                     System.out.println("Nama film dalam huruf besar:");
                     break;
                 case 3:
-                    System.out.println("Anda memilih Teh Red Velvet");
+
                     break;
                 case 4:
-                    System.out.println("Anda memilih Teh Avocado");
+
                     break;
                 case 5:
-                    System.out.println("Anda memilih Teh Tarik");
+
                     break;
                 default:
                     System.out.println("Menu tidak tersedia");

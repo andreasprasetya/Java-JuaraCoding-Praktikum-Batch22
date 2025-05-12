@@ -1,16 +1,15 @@
-package com.juaracoding;
+package com.juaracoding.FilmBioskop;
 
-public class Method {
 
+
+public class Variable {
     public static void main(String[] args) {
-
 
 
 
     }
 
-    // custom method
-    public static void detailProduct(String productName, double price, int stock, int minBuy){
+    public static void detailProduct(java.lang.String productName, double price, int stock, int minBuy){
         System.out.println("Nama Product: "+productName.toUpperCase());
         System.out.println("Harga: "+price);
         System.out.println("Jumlah Stok: "+stock);
@@ -47,3 +46,7 @@ public class Method {
 
 
 }
+
+
+
+

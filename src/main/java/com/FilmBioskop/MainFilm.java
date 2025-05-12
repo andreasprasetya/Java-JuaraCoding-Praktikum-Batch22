@@ -7,57 +7,55 @@ public class MainFilm {
     public static void main(String[] args) {
 
 
+        Scanner input = new Scanner(System.in);
 
+        int pilihan;
+        char ulang;
 
-    }
-    public static void tampilkanMenu(){
-
-
-
-
-        int i=0;
-        int menu = 0;
         do {
             System.out.println("=== Menu Utama ===");
-            System.out.println("1.Tampilkan Daftar Film");
-            System.out.println("2.Input Data Film");
-            System.out.println("3.Cari Film");
-            System.out.println("4.Keluar");
+            System.out.println("1. Tampilkan Daftar Film");
+            System.out.println("2. Input Data Film");
+            System.out.println("3. Cari Film");
+            System.out.println("4. Keluar");
+            System.out.println();
             System.out.print("Pilihan: ");
+            pilihan = input.nextInt();
 
-
-            switch(menu){
+            switch(pilihan){
                 case 1:
-
+                    System.out.println("Nama Film:");
+                    System.out.println("Harga Tiket:");
+                    System.out.println("Jumlah Tiket:");
                     break;
                 case 2:
-
+                    System.out.println("Masukan Nama Film:");
+                    System.out.println("Nama film dalam huruf besar:");
                     break;
                 case 3:
-
+                    System.out.println("Anda memilih Teh Red Velvet");
                     break;
                 case 4:
-
+                    System.out.println("Anda memilih Teh Avocado");
                     break;
-
+                case 5:
+                    System.out.println("Anda memilih Teh Tarik");
+                    break;
                 default:
-
+                    System.out.println("Menu tidak tersedia");
             }
 
             System.out.println();
 
 
+            ulang = input.next().charAt(0);
 
             System.out.println();
         }
-        while (menu!=4);
+        while (ulang!= 't');
 
-        System.out.println("Terimakasih");
+        System.out.println("Terimakasih...");
 
     }
 }
-
-
-
-
 

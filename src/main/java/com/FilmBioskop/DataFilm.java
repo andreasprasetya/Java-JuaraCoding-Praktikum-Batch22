@@ -22,22 +22,22 @@ public class DataFilm {
 
 
             int g = 0;
-            System.out.print("Judul Film:\n "+title[g]);
+            System.out.println("Judul Film: "+title[g]);
             for (g = 0; g < title.length; g++) {
             }
 
             int h = 0;
-            System.out.print("Genre: "+genre1[h]);
+            System.out.println("Genre: "+genre1[h]);
             for (h = 0; h < genre1.length; h++) {
 
             }
             int i=0;
-            System.out.print("Durasi: "+ durasi1[i]);
+            System.out.println("Durasi: "+ durasi1[i]);
             for (i = 0; i < durasi1.length; i++) {
             }
 
             int j=0;
-            System.out.print("Rated Film: "+rated[j]);
+            System.out.println("Rated Film: "+rated[j]);
             for (j = 0; j < rated.length; j++) {
             }
 

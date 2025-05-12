@@ -12,7 +12,6 @@ public class Login extends MainFilm {
 
         login("Admin",1234);
 
-
     }
 
     public static void login(String userName, int password) {

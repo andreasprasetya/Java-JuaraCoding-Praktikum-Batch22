@@ -8,6 +8,7 @@ public class MainFilm {
 
 
 
+
     }
     public static void tampilkanMenu(){
 
@@ -19,19 +20,16 @@ public class MainFilm {
         char ulang;
 
         do {
-            System.out.println("=== Menu Utama ===\n");
-            System.out.println("1. Tampilkan Daftar Film\n");
-            System.out.println("2. Input Data Film\n");
-            System.out.println("3. Cari Film\n");
-            System.out.println("4. Keluar\n");
+            System.out.println("=== Menu Utama ===");
+            System.out.println("1. Tampilkan Daftar Film");
+            System.out.println("2. Input Data Film");
+            System.out.println("3. Cari Film");
+            System.out.println("4. Keluar");
             System.out.print("Pilihan: ");
 
 
             switch(menu){
                 case 1:
-
-                    DaftarFilm d = new DaftarFilm();
-
 
                     break;
                 case 2:
@@ -58,7 +56,7 @@ public class MainFilm {
         }
         while (menu !=4);
 
-        System.out.println("Terimakasih...");
+        System.out.println("Terimakasih");
 
     }
 }

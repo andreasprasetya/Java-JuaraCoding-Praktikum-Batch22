@@ -11,6 +11,7 @@ public class DaftarFilm {
     public  static  void tampilkanFilm(String judul, String genre, String durasi, int rating) {
         Scanner input = new Scanner(System.in);
         ArrayList<Integer> numbers = new ArrayList<>();
+
         System.out.println("Judul Film:");
         System.out.println("Genre:");
         System.out.println("Durasi:");

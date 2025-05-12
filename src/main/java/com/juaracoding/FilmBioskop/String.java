@@ -15,18 +15,12 @@ public class String {
         // Tampilkan output ke user
         System.out.println("Masukkan nama film:");
         System.out.print("Nama film dalam huruf besar:");
-
-
         nama = judul.nextLine();
-
         System.out.print("Masukkan nama film ");
-        // menggunakan scanner lagi
         film = judul.toString();
 
-        System.out.print("UNama film dalam huruf besar:");
-        film = judul.nextInt();
-
-
+        System.out.print("Nama film dalam huruf besar:");
+        film = judul.ToUpper();
 
         System.out.println("Masukkan nama film " + nama);
         System.out.println("Nama film dalam huruf besar: " +film);

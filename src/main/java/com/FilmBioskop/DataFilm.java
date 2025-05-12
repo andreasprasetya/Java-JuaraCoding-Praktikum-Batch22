@@ -1,8 +1,6 @@
 package com.FilmBioskop;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Scanner;
+
 
 public class DataFilm {
     public static void main(String[] args) {
@@ -23,31 +21,29 @@ public class DataFilm {
         System.out.println("Tampilkan Film");
 
 
-        int g = 0;
+            int g = 0;
+            System.out.print("Judul Film:\n "+title[g]);
+            for (g = 0; g < title.length; g++) {
+            }
 
-        System.out.println("Judul Film: " + title[g]);
-        for (g = 0; g < title.toString(); g++) {
-            System.out.println(title[g]);
-        }
+            int h = 0;
+            System.out.print("Genre: "+genre1[h]);
+            for (h = 0; h < genre1.length; h++) {
 
-        int h = 0;
-        System.out.println("Genre: " + genre1[h]);
-        for (h = 0; h < genre1.toString(); h++) {
-            System.out.println(genre1[h]);
-        }
-        int i=0;
-        System.out.println("Durasi: " + durasi1[i]);
-        for (i = 0; i < durasi1.toString(); i++) {
-            System.out.println(durasi1[i]);
-        }
+            }
+            int i=0;
+            System.out.print("Durasi: "+ durasi1[i]);
+            for (i = 0; i < durasi1.length; i++) {
+            }
 
-        int j=0;
-        System.out.println("Rated Film: " + rated[j]);
-        for (j = 0; j < rated.toString(); j++) {
-            System.out.println(rated[j]);
-        }
+            int j=0;
+            System.out.print("Rated Film: "+rated[j]);
+            for (j = 0; j < rated.length; j++) {
+            }
 
+
+        }
 
     }
-}
+
 
